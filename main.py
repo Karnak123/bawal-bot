@@ -75,6 +75,9 @@ class MyClient(discord.Client):
             await message.add_reaction('🇱')
             await message.add_reaction('🅾️')
             await message.add_reaction('😎')
+        
+        if re.search('(b+a+l+)|(b+a+r+a+)', message.content.lower()):
+            await message.channel.send('ai gaal dibi na (>_<)')
 
 
 client = MyClient()
