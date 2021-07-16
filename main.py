@@ -53,7 +53,7 @@ class MyClient(discord.Client):
         if message.author.id == self.user.id:
             return
 
-        if random() < 0.15:
+        if random() < 0.05:
             global flag
             await message.delete()
             await set_flag()
